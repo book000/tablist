@@ -1,20 +1,22 @@
 {
   "manifest_version": 2,
-
-  "name": "tab list",
-  "description": "Show a list of open tabs for easy backup",
-  "version": "1.7",
-  "author": "dev@conceptualspace.net",
-
+  "name": "Tab list (clipboard & markdown)",
+  "description": "Export the list of open tabs to the clipboard in the Markdown list.",
+  "version": "1.0",
+  "author": "Tomachi",
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
   },
-
   "browser_action": {
     "default_icon": "icon.png",
     "default_title": "List Tabs"
   },
   "permissions": [
-    "tabs"
-  ]
+    "tabs",
+    "clipboardWrite",
+    "notifications"
+  ],
+  "update_url": "https://github.com/book000/tablist/releases/latest/download/tablist.xpi"
 }
